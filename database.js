@@ -2,10 +2,6 @@ const mongoose = require('mongoose')
 const { Decimal128 } = require("bson")
 const dotenv = require('dotenv').config()
 
-// connect DB
-//username:test01 pass:fktPbMacwwhZPB8k
-// const dbUrl =
-//     "mongodb+srv://test01:password@cluster0.lqy2u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(process.env.MONGODB_URI, {
     dbName: process.env.DB_NAME,
     user: process.env.DB_USERNAME,
